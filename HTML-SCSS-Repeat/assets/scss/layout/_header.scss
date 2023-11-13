@@ -1,28 +1,120 @@
 #header {
-  background-color: $primary-color;
-  padding: 1rem 0;
-  .header {
-    @include flexbox();
-    .fa-solid {
-      margin-right: 10px;
-      color: $color-white;
-    }
-    .phone {
-      color: $color-white;
-    }
-    nav {
-      ul {
-        display: flex;
-        gap: 30px;
-        li {
-          a {
-            color: $color-white;
-            transition: all 1s;
-            &:hover {
-             border-bottom: 1px solid #fff;
+  .header-top {
+    background-color: $primary-color;
+    padding: 1rem 0;
+    .header {
+      @include flexbox();
+      .fa-solid {
+        margin-right: 10px;
+        color: $color-white;
+      }
+      .phone {
+        color: $color-white;
+      }
+      nav {
+        ul {
+          display: flex;
+          gap: 30px;
+          li {
+            a {
+              color: $color-white;
+              transition: all 1s;
+              &:hover {
+                border-bottom: 1px solid #fff;
+              }
             }
           }
         }
+      }
+      .menu-icons {
+        font-size: 25px;
+        display: none;
+      }
+    }
+  }
+  .header-bottom {
+    padding: 3rem 0;
+    .hero-banner-section {
+      @include flexbox();
+
+      h1 {
+        font-weight: 700;
+        font-family: "Palanquin Dark", sans-serif;
+      }
+      .input-icons {
+        position: relative;
+        input {
+          width: 504px;
+          padding: 10px 0;
+          border-radius: 5px;
+          border: none;
+          outline: none;
+          padding-left: 10px;
+          padding-right: 25px;
+          background-color: #f7f9fc;
+          &::placeholder {
+            color: $color-placeholder;
+          }
+        }
+        .fa-solid {
+          position: absolute;
+          top: 8px;
+          right: 5px;
+          color: $color-gry;
+        }
+      }
+      nav {
+        ul {
+          @include flexbox();
+          gap: 20px;
+          li {
+            a {
+              color: $color-2e2e;
+              .icons {
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .hero-banner-section-two {
+      // padding-top: 1.5rem 0;
+      margin-top: 30px;
+
+      nav {
+        ul {
+          @include flexbox();
+          li {
+            a {
+              color: $color-gry;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .header-top {
+        .header {
+          nav {
+            display: none;
+          }
+          .menu-icons {
+            display: block;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .hero-banner-section {
+        .input-icons {
+          display: none;
+        }
+      }
+      .hero-banner-section-two {
+        display: none;
       }
     }
   }

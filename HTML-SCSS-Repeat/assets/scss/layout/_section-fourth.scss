@@ -1,0 +1,80 @@
+#section-four {
+  padding: 1.5rem 0;
+  background-color: #fff7f7;
+  .products-heading {
+    @include flexbox();
+    h2 {
+      padding: 30px 0;
+      font-family: "Rubik", sans-serif;
+      font-weight: 500;
+    }
+  }
+  .products-container-2 {
+    display: flex;
+    gap: 30px;
+    .products-container-icons {
+      position: relative;
+    }
+    .card {
+      width: 30%;
+      border-radius: 5px;
+      background-color: #fff;
+      img {
+        width: 300px;
+        height: 200px;
+        text-align: center;
+      }
+      ul {
+        @include flexbox(center, flex-start);
+        li {
+          .fa-star {
+            color: yellow;
+            font-size: 20px;
+          }
+        }
+      }
+      .button {
+        position: absolute;
+        top: 0px;
+        left: 0;
+      }
+      .fa-heart {
+        position: absolute;
+        color: $color-pink;
+        right: 0;
+      }
+      .lorem {
+        width: 302px;
+        line-height: 27.2px;
+      }
+      .card-from {
+        margin-top: 15px;
+        display: flex;
+        gap: 15px;
+        .dollars {
+          color: $color-pink;
+          font-weight: 600;
+          font-size: 20px;
+        }
+        h6 {
+          color: $color-gry-two;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .products-heading {
+      display: none;
+    }
+    .products-container-2 {
+      flex-direction: column;
+      align-items: center;
+      .card {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

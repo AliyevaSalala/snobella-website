@@ -94,20 +94,22 @@
         }
       }
     }
+  }
 
-    @media screen and (max-width: 767px) {
-      .header-top {
-        .header {
-          nav {
-            display: none;
-          }
-          .menu-icons {
-            display: block;
-          }
+  @media screen and (max-width: 767px) {
+    .header-top {
+      .header {
+        nav {
+          display: none;
+        }
+        .menu-icons {
+          display: block;
         }
       }
     }
-    @media screen and (max-width: 767px) {
+  }
+  @media screen and (max-width: 767px) {
+    .header-bottom {
       .hero-banner-section {
         .input-icons {
           display: none;

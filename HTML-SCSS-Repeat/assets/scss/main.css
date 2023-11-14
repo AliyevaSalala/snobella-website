@@ -230,10 +230,10 @@ h3 {
   padding: 10px;
 }
 @media screen and (max-width: 767px) {
-  #header .header-bottom .header-top .header nav {
+  #header .header-top .header nav {
     display: none;
   }
-  #header .header-bottom .header-top .header .menu-icons {
+  #header .header-top .header .menu-icons {
     display: block;
   }
 }
@@ -295,6 +295,7 @@ h3 {
   width: 30%;
   border-radius: 5px;
   background-color: #f9f9f9;
+  border-radius: 5px;
 }
 #section-three .products .products-container .card img {
   width: 350px;
@@ -385,6 +386,7 @@ h3 {
   width: 30%;
   border-radius: 5px;
   background-color: #fff;
+  border-radius: 5px;
 }
 #section-four .products-container-2 .card img {
   width: 300px;
@@ -509,7 +511,7 @@ h3 {
 }
 #footer .footer .footer-bottom .footer-box-container {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 #footer .footer .footer-bottom .footer-box-container .footer-box h3 {
   margin-bottom: 15px;
@@ -554,12 +556,17 @@ h3 {
   }
   #footer .footer .footer-bottom .footer-contact {
     margin-bottom: 30px;
+    text-align: center;
   }
   #footer .footer .footer-bottom .footer-contact p {
     width: 600px;
   }
   #footer .footer .footer-bottom .footer-contact .footer-button {
     width: 600px;
+  }
+  #footer .footer .footer-bottom .footer-box-container {
+    flex-direction: column;
+    text-align: center;
   }
   #footer .footer .footer-social {
     flex-direction: column;

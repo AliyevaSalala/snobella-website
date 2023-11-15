@@ -1,6 +1,6 @@
-#section-four {
+#section-five {
   padding: 1.5rem 0;
-  background-color: #fff7f7;
+  background-color: #fff;
   .products-heading {
     @include flexbox();
     h2 {
@@ -18,7 +18,8 @@
     .card {
       width: 30%;
       border-radius: 5px;
-      background-color: #fff;
+      background-color: #f9f9f9;
+ 
       border-radius: 5px;
       img {
         width: 300px;
